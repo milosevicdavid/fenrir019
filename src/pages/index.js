@@ -6,12 +6,14 @@ import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import img from "../images/dogs.jpg"
 
-const IndexPage = ({data}) => (
-  <Wrapper>
-    <Layout>
-    <Img className="cover" fluid={data.cover.childImageSharp.fluid} />
-      <div className="text">
+const IndexPage = ({data}) => {
 
+const { fluid } = data.cover.childImageSharp
+
+    return (
+  <Wrapper>
+    <Layout fluid={fluid}>
+      <div className="text">
         <p>
           {" "}
           Fenrir019 veterinarska ambulanta je specijalizovana za pružanje
@@ -47,25 +49,21 @@ const IndexPage = ({data}) => (
     </Layout>
   </Wrapper>
 )
+}
 
 const Wrapper = styled.div`
   
-  .cover {
-    margin-bottom: 50px;
-    padding: 1rem;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
-  }
-
+ 
   .text {
     font-size: 0.8rem;
-    font-weight: 600;
+    font-weight: 400;
     color: var(--mainBlack);
     max-width: 650px;
   }
 `
 export const query = graphql`
   query {
-    cover: file(relativePath: { eq: "dog.jpg" }) {
+    cover: file(relativePath: { eq: "dogs.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG

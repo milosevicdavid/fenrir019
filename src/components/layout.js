@@ -3,12 +3,16 @@ import "./layout.css"
 import Navbar from "./Navbar"
 import SideBar from "./SideBar"
 import styled from "styled-components"
+import Img from "gatsby-image"
 
-const Layout = ({ children }) => {
+const Layout = ({fluid, children}) => {
+
+
   return (
     <>
       <Wrapper>
         <Navbar />
+        <Img className="cover" fluid={fluid} />
         <div className="main-flex">
           <div className="children">
             <main>{children}</main>
@@ -43,6 +47,10 @@ const Wrapper = styled.div`
     flex-grow: 1;
     margin: 2rem;
     //margin-left: 2rem;
+  }
+
+  .cover {
+    max-height: 300px;
   }
 `
 

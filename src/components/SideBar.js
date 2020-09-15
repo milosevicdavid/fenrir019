@@ -10,10 +10,10 @@ import { FaPhoneAlt } from "react-icons/fa"
 const SideBar = () => {
     return (
       <Wrapper>
-        <p><span><GoLocation /> </span>  Marijane Gregoran 34a, Beograd</p>
-        <p><span><MdPhoneIphone / > </span>  064/270 94 70, 061/60 512 71</p>
-        <p><span><FaPhoneAlt /> </span>  011/29-70-419</p>
-        <p><span><FiMail /> </span>  fenrir019@gmail.com</p>
+        <p><span><GoLocation />  </span>   Marijane Gregoran 34a, Beograd</p>
+        <p><span><MdPhoneIphone / >  </span>   064/270 94 70, 061/60 512 71</p>
+        <p><span><FaPhoneAlt />  </span>   011/29-70-419</p>
+        <p><span><FiMail />  </span>   fenrir019@gmail.com</p>
       </Wrapper>
     );
 };
@@ -21,7 +21,7 @@ const SideBar = () => {
 const Wrapper = styled.div`
   flex-basis: 200px;
   color: var(--mainBlack);
-  font-weight: 600;
+  font-weight: 400;
   border-left: 1px solid var(--mainBlack);
   font-size: 0.9rem;
   padding: 15px 0px 15px 20px;
@@ -34,7 +34,7 @@ const Wrapper = styled.div`
 
   span {
     color: var(--primaryColor);
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 `
 
