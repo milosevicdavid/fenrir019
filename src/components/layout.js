@@ -1,50 +1,49 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 import "./layout.css"
 import Navbar from "./Navbar"
+import SideBar from "./SideBar"
+import styled from "styled-components"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <>
-  <Navbar siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 1600,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-    </div>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+      <Wrapper>
+        <Navbar />
+        <div className="main-flex">
+          <div className="children">
+            <main>{children}</main>
+          </div>
+          <div className="sidebar">
+            <SideBar />
+          </div>
+        </div>
+      </Wrapper>
     </>
   )
 }
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+const Wrapper = styled.div`
+  background-color: var(--offWhite);
+  .main-flex {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .children {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 3;
+    margin: 2rem;
+  }
+
+  .sidebar {
+    flex-basis:400px;
+    flex-grow: 1;
+    margin: 2rem;
+    //margin-left: 2rem;
+  }
+`
 
 export default Layout

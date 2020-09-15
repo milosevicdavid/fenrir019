@@ -7,7 +7,7 @@ import styled from "styled-components"
 const SecondPage = () => (
   <Wrapper>
     <Layout>
-      <div class="grid-gallery">
+      <div className="gallery-wrapper">
         <Gallery />
       </div>
     </Layout>
@@ -16,15 +16,18 @@ const SecondPage = () => (
 
 const Wrapper = styled.div`
   background-color: #cddae1;
-  
 
- 
-  @media (min-width: 1280px) {
+  .gallery-wrapper {
+    min-width: 1000px;
+  }
+
+  @media (max-width: 600px) {
     .css-dvst2w {
-      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-      grid-auto-rows: 24rem;
+      grid-template-columns: 1fr;
+      grid-auto-rows: 20rem;
     }
   }
-`
+
+  `
 
 export default SecondPage

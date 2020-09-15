@@ -79,8 +79,6 @@ const Navbar = () => {
 }
 
 const Wrapper = styled.div`
-  background-color: var(--offWhite);
-  color: black;
 
   .logo-image {
     max-width: 200px;
@@ -131,9 +129,7 @@ const Wrapper = styled.div`
 
       &:hover {
         color: var(--primaryColor);
-        border-bottom: 1px solid var(--primaryColor);
-        border-top: 1px solid var(--primaryColor);
-    }
+           }
   }
 }
 
