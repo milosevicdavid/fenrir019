@@ -15,7 +15,6 @@
     "gatsby-plugin-sharp": "^2.6.32",
     "gatsby-plugin-transition-link": "^1.20.2",
     "gatsby-source-filesystem": "^2.3.28",
-    "gatsby-theme-gallery": "^1.0.2",
     "gatsby-transformer-sharp": "^2.5.14",
     "gsap": "^3.5.1",
     "prop-types": "^15.7.2",

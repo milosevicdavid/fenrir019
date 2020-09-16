@@ -1,7 +1,7 @@
 import React from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Layout from "../components/layout"
-import { graphql, useStaticQuery } from "gatsby"
+import {  graphql } from "gatsby"
 import Img from "gatsby-image"
 import { FaInstagram } from "react-icons/fa"
 import { GiHouse, GiHealthNormal, GiPawHeart } from "react-icons/gi"
