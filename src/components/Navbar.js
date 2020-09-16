@@ -11,6 +11,7 @@ import { FiMail } from "react-icons/fi"
 import { GoLocation } from "react-icons/go";
 import styled from "styled-components"
 import logo from "../images/logo.png"
+import Img from "gatsby-image"
 
 const Navbar = () => {
   const [isOpen, setNav] = useState(false)
@@ -41,7 +42,7 @@ const Navbar = () => {
               <AniLink fade to="/page-2/">
                 GALERIJA
               </AniLink>
-              <AniLink fade to="/404/">
+              <AniLink fade to="/Contact/">
                 KONTAKT
               </AniLink>
               <AniLink fade to="/using-typescript/">
@@ -73,12 +74,20 @@ const Navbar = () => {
             <FaPhoneSquareAlt />
           </a>
         </div>
-      </div>
+    </div>
+    
     </Wrapper>
   )
 }
 
 const Wrapper = styled.div`
+
+  .cover-container {
+    display: block;
+    padding: auto 50px;
+  }
+
+ 
 
   .logo-image {
     max-width: 200px;
@@ -140,7 +149,7 @@ const Wrapper = styled.div`
   .nav-links-phone {
     font-size: 0.8rem;
     height: 150px;
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
 
