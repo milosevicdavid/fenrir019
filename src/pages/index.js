@@ -125,6 +125,26 @@ const Wrapper = styled.div`
   .icon {
     color: var(--primaryColor);
   }
+
+ .main-flex {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+
+  .children {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 2rem;
+  }
+
+  .sidebar {
+    flex-basis: 400px;
+    margin: 2rem;
+  }
+
 `
 export const query = graphql`
   query {
