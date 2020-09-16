@@ -10,7 +10,9 @@ import { GiHouse, GiHealthNormal, GiPawHeart } from "react-icons/gi"
 
 const IndexPage = ({ data }) => {
   return (
+    <main>
     <Wrapper>
+      
       <Layout>
         <div className="text">
           <p className="headline">
@@ -85,7 +87,9 @@ const IndexPage = ({ data }) => {
           <Img className="cover" fluid={data.first.childImageSharp.fluid} />
         </div>
       </Layout>
+      
     </Wrapper>
+    </main>
   )
 }
 
