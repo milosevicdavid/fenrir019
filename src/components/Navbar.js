@@ -13,7 +13,27 @@ import styled from "styled-components"
 import logo from "../images/logo.png"
 import Img from "gatsby-image"
 
+
+
+
+const getImages = graphql`
+  query {
+    logo: file(relativePath: { eq: "logo.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
+
+
 const Navbar = () => {
+
+  const data = useStaticQuery(getImages)
+
+
   const [isOpen, setNav] = useState(false)
   const toggleNav = () => {
     setNav(isOpen => !isOpen)
@@ -25,7 +45,7 @@ const Navbar = () => {
         <div className="nav-header">
           <div class="logo-image">
             <AniLink fade to="/">
-              <img src={logo} alt="backroads logo" />
+              <Img fluid={data.logo.childImageSharp.fluid} />
             </AniLink>
           </div>
           <button type="button" className="logo-btn" onClick={toggleNav}>
