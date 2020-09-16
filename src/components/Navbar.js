@@ -8,17 +8,17 @@ import {
   FaPhoneAlt
 } from "react-icons/fa"
 import { FiMail } from "react-icons/fi"
-import { GoLocation } from "react-icons/go";
+import { GoLocation } from "react-icons/go"
 import styled from "styled-components"
-import logo from "../images/logo.png"
 import Img from "gatsby-image"
+import { graphql, useStaticQuery } from "gatsby"
 
 
 
 
 const getImages = graphql`
   query {
-    logo: file(relativePath: { eq: "logo.png" }) {
+    logomain: file(relativePath: { eq: "logomain.png" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
@@ -44,8 +44,8 @@ const Navbar = () => {
       <div className="nav-center">
         <div className="nav-header">
           <div class="logo-image">
-            <AniLink fade to="/">
-              <Img fluid={data.logo.childImageSharp.fluid} />
+            <AniLink fade to="/index">
+              <Img fluid={data.logomain.childImageSharp.fluid} />
             </AniLink>
           </div>
           <button type="button" className="logo-btn" onClick={toggleNav}>
@@ -111,6 +111,7 @@ const Wrapper = styled.div`
 
   .logo-image {
     max-width: 200px;
+    min-width: 200px;
   }
 
   .nav-header {
