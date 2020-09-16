@@ -1,17 +1,15 @@
 import React from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-import styled from "styled-components"
 import Layout from "../components/layout"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import img from "../images/dogs.jpg"
 import { FaInstagram } from "react-icons/fa"
 import { GiHouse, GiHealthNormal, GiPawHeart } from "react-icons/gi"
+import "../components/layout.css"
 
 const IndexPage = ({ data }) => {
   return (
     <main>
-    <Wrapper>
       
       <Layout>
         <div className="text">
@@ -88,64 +86,13 @@ const IndexPage = ({ data }) => {
         </div>
       </Layout>
       
-    </Wrapper>
     </main>
   )
 }
 
-const Wrapper = styled.div`
-  .text {
-    font-size: 1rem;
-    font-weight: 400;
-    color: var(--mainBlack);
-    max-width: 700px;
-    line-height: 2rem;
-    margin-bottom: 80px;
-    letter-spacing: 1px;
-    word-spacing: 3px;
-  }
 
-  .cover {
-    border-radius: 10px;
-    margin-bottom: 105px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
-  }
 
-  .cover-container {
-    picture {
-      width: 80%;
-    }
-  }
 
-  .headline {
-    font-size: 1.6rem;
-    font-weight: 600;
-  }
-
-  .icon {
-    color: var(--primaryColor);
-  }
-
- .main-flex {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    }
-
-  .children {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem 2rem;
-  }
-
-  .sidebar {
-    flex-basis: 400px;
-    margin: 2rem;
-  }
-
-`
 export const query = graphql`
   query {
     first: file(relativePath: { eq: "top.jpg" }) {

@@ -595,3 +595,35 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+  .text {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--mainBlack);
+    max-width: 700px;
+    line-height: 2rem;
+    margin-bottom: 80px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+  }
+
+  .cover {
+    border-radius: 10px;
+    margin-bottom: 105px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
+  }
+
+  .cover-container {
+    picture {
+      width: 80%;
+    }
+  }
+
+  .headline {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  .icon {
+    color: var(--primaryColor);
+  }
