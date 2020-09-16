@@ -14,14 +14,12 @@ const IndexPage = ({ data }) => {
       <Layout>
         <div className="text">
           <p className="headline">
-            U VAŠEM KOMŠILUKU{" "}
+            U VAŠEM KOMŠILUKU
             <span className="icon">
               <GiHouse />
-            </span>{" "}
-          </p>
+            </span></p>
 
           <p>
-            {" "}
             Fenrir019 veterinarska ambulanta je specijalizovana za pružanje
             preventive i terapije Vašim ljubimcima. Nalazimo se na teritoriji
             opštine Palilula, u ulici Marijane Gregoran 34a.
@@ -33,18 +31,17 @@ const IndexPage = ({ data }) => {
 
         <div className="text">
           <p className="headline">
-            TIM VETERINARA{" "}
+            TIM VETERINARA
             <span className="icon">
               <GiHealthNormal />
-            </span>{" "}
+            </span>
           </p>
 
           <p>
-            {" "}
             U našoj ambulanti rade dva licencirana doktora veterinarske
             medicine, koji će svojom stručnošću postaviti pravu dijagnozu i dati
             terapiju, po potrebi. Ljubav prema životinjama je glavni razlog
-            zašto naša veterinarska ambulanta FENRIR019 postoji.{" "}
+            zašto naša veterinarska ambulanta FENRIR019 postoji.
           </p>
         </div>
         <div className="cover">
@@ -53,19 +50,18 @@ const IndexPage = ({ data }) => {
 
         <div className="text">
           <p className="headline">
-            LJUBIMCI{" "}
+            LJUBIMCI
             <span className="icon">
               <GiPawHeart />
-            </span>{" "}
+            </span>
           </p>
 
           <p>
-            {" "}
             Veterinarska ambulanta FENRIR019 pre svega sve svoje drage pacijente
             tretira jednako s ljubavlju i pažnjom a iznad svega nam je stalo da
             na najbolji i najadekvatniji način nađemo rešenje za problem koji ih
             muči bilo da su u oklopu, bodljikavi, pernati, čupavi, nervozni,
-            uplašeni, ljuti...{" "}
+            uplašeni, ljuti...
           </p>
         </div>
         <div className="cover-container">
@@ -74,16 +70,15 @@ const IndexPage = ({ data }) => {
 
         <div className="text">
           <p className="headline">
-            U VAŠEM KOMŠILUKU{" "}
+            U VAŠEM KOMŠILUKU
             <span className="icon">
               <FaInstagram/>
-            </span>{" "}
+            </span>
           </p>
 
-          <p>
-            {" "}
+          <p> 
             Sprovodimo akcije za određene usluge na nedeljnom nivou. Pratite rad
-            naše ambulante na Instagramu: @fenrir019veterinar.{" "}
+            naše ambulante na Instagramu: @fenrir019veterinar.
           </p>
         </div>
         <div className="cover">
