@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 html {
   -ms-text-size-adjust: 100%;
@@ -9,17 +9,16 @@ html {
   font: 112.5%/1.45em georgia, serif, sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
-  --primaryColor: #FFD215;
-    --mainWhite: #fff;
-    --offWhite: #f7f7f7;
-    --mainBlack: #222;
-    --mainGrey: #ececec;
-    --darkGrey: #afafaf;
-    --mainTransition: transform 0.2s;
-    --mainSpacing: 2px;
-    --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
-    --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
-
+  --primaryColor: #ffd215;
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --darkGrey: #afafaf;
+  --mainTransition: transform 0.2s;
+  --mainSpacing: 2px;
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
 body {
   margin: 0;
@@ -27,7 +26,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
   font-weight: normal;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   word-wrap: break-word;
   font-kerning: normal;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
@@ -597,76 +596,99 @@ pre tt:after {
   }
 }
 
-  .text {
-    font-size: 1rem;
-    font-weight: 400;
-    color: var(--mainBlack);
-    max-width: 700px;
-    line-height: 1.7rem;
-    margin-bottom: 60px;
-    letter-spacing: 1px;
-    word-spacing: 3px;
-    padding: 0.75rem;
-    background-color: var(--mainGrey);
-    height: 385px;
-    border-radius: 2px;
-      }
+.text {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--mainBlack);
+  max-width: 700px;
+  line-height: 1.7rem;
+  margin-bottom: 60px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  padding: 0.75rem;
+  background-color: var(--mainGrey);
+  height: 385px;
+  border-radius: 2px;
 
-     
-
- @media (max-width: 1024px) {
-    .text {
-      max-height: 300px;
-    }
-  }
-
-
-   @media (max-width: 700px) {
-    .text {
-      max-height: 320px;
-    }
-  }
-
-  @media (max-width: 450px) {
-    .text {
-      max-height: 600px;
-    }
-  }
-
-  .cover {
-    border-radius: 10px;
-    margin-bottom: 90px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
-  }
-
-  .headline {
-    font-size: 1.6rem;
-    font-weight: 600;
-  }
-
-  .icon {
-    color: var(--primaryColor);
-    margin-left: 10px;
-  }
-
-  .index-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    max-width: 900px;
-    grid-gap: 0px 50px;
 }
 
+.paragraf2 {
+  padding-top: 40px;
+   }
+
+   .paragraf4 {
+     padding-top: 30px;
+   }
 
 
-  @media (max-width: 1280px) {
-    .index-container {
-      grid-template-columns: 1fr;
-      grid-template-rows: 4fr;
+   @media (max-width: 1280px) {
+     .text {
+       max-height: 260px;
+     }
+   }
 
-          }
+@media (max-width: 1024px) {
+  .text {
+    max-height: 280px;
   }
+}
 
+@media (max-width: 700px) {
+  .text {
+    max-height: 320px;
+  }
+}
 
+@media (max-width: 500px) {
+  .text {
+    max-height: 600px;
+  }
+}
 
-  
+.cover {
+  border-radius: 10px;
+  margin-bottom: 90px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
+}
+
+.headline {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+@media (max-width: 430px) {
+  .headline {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .headline {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 1400px) {
+  .headline {
+    font-size: 1.6rem;
+  }
+}
+
+.icon {
+  color: var(--primaryColor);
+  margin-left: 10px;
+}
+
+.index-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  max-width: 900px;
+  grid-gap: 0px 50px;
+}
+
+@media (max-width: 1280px) {
+  .index-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+  }
+}
