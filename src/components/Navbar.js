@@ -5,7 +5,7 @@ import {
   FaPhoneSquareAlt,
   FaFacebook,
   FaInstagram,
-  FaPhoneAlt
+FaPhoneAlt
 } from "react-icons/fa"
 import { FiMail } from "react-icons/fi"
 import { GoLocation } from "react-icons/go"
@@ -44,7 +44,7 @@ const Navbar = () => {
       <div className="nav-center">
         <div className="nav-header">
           <div class="logo-image">
-            <AniLink fade to="/index">
+            <AniLink fade to="/">
               <Img fluid={data.logomain.childImageSharp.fluid} />
             </AniLink>
           </div>
@@ -59,19 +59,19 @@ const Navbar = () => {
               <AniLink fade to="/">
                 NASLOVNA
               </AniLink>
-              <AniLink fade to="/page-2/">
-                GALERIJA
+              <AniLink fade to="/Services/">
+                USLUGE
               </AniLink>
               <AniLink fade to="/Contact/">
                 KONTAKT
               </AniLink>
-              <AniLink fade to="/using-typescript/">
-                NOVOSTI
+              <AniLink fade to="/404/">
+                USVAJANJE
               </AniLink>
             </ul>
           </div>
           <div class="nav-links show-nav nav-links-phone">
-            <a href="https://www.planplus.rs/#!pretraga/Marijane+Gregoran+34,+Beograd+(Palilula)">
+            <a href="https://www.google.com/maps/place/%D0%9C%D0%B0%D1%80%D0%B8%D1%98%D0%B0%D0%BD%D0%B5+%D0%93%D1%80%D0%B5%D0%B3%D0%BE%D1%80%D0%B0%D0%BD+34,+%D0%91%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D0%B4/@44.8131524,20.5057965,17z/data=!3m1!4b1!4m5!3m4!1s0x475a7a8af3ae51ad:0x9bc6871b06d6c0e3!8m2!3d44.8131486!4d20.5079852">
     <GoLocation /> Marijane Gregoran 34a, Beograd
             </a>
     <a href="tel:+381112970419">
@@ -87,7 +87,7 @@ const Navbar = () => {
           <a href="https://www.instagram.com/fenrir019veterinar/">
             <FaInstagram />
           </a>
-          <AniLink fade to="/contact/">
+          <AniLink fade to="/Contact/">
             <FiMail />
           </AniLink>
           <a href="tel:+381112970419">

@@ -83,11 +83,11 @@ const SideBar = () => {
 }
 
 const Wrapper = styled.div`
-  max-width: 400px;
+  min-width: 350px;
 
   .yellowbox {
     box-shadow: 0 8px 6px -6px black;
-    flex-basis: 200px;
+    flex-basis: 400px;
     font-weight: 400;
     font-size: 0.9rem;
     padding: 15px 0px 15px 20px;
@@ -96,6 +96,19 @@ const Wrapper = styled.div`
     background-color: var(--mainBlack);
     border-radius: 10px;
   }
+
+  @media (max-width: 1000px) {
+    .yellowbox {
+      width: 600px
+  }
+  }
+
+@media (max-width: 641px) {
+    .yellowbox {
+      width: 350px
+  }
+  }
+
 
  
   .worktime {

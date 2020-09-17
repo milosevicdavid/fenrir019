@@ -3,6 +3,7 @@ import "./layout.css"
 import Navbar from "./Navbar"
 import SideBar from "./SideBar"
 import styled from "styled-components"
+import Footer from "./Footer"
 
 const Layout = ({ children }) => {
   return (
@@ -17,6 +18,7 @@ const Layout = ({ children }) => {
             <SideBar />
           </div>
         </div>
+        <Footer />
       </Wrapper>
     </>
   )
@@ -25,13 +27,17 @@ const Layout = ({ children }) => {
 const Wrapper = styled.div`
   background-color: var(--offWhite);
 
-  
   .main-flex {
-    margin-top: 20px;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+  }
+
+  @media (max-width: 1000px) {
+    .main-flex {
+      flex-wrap: wrap;
     }
+  }
 
   .children {
     display: flex;
@@ -41,10 +47,8 @@ const Wrapper = styled.div`
   }
 
   .sidebar {
-    flex-basis: 400px;
     margin: 2rem;
   }
-
-  `
+`
 
 export default Layout
