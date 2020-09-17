@@ -613,12 +613,7 @@ pre tt:after {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
   }
 
-  .cover-container {
-    picture {
-      width: 80%;
-    }
-  }
-
+  
   .headline {
     font-size: 1.6rem;
     font-weight: 600;
@@ -627,3 +622,23 @@ pre tt:after {
   .icon {
     color: var(--primaryColor);
   }
+
+  .index-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+    grid-gap: 50px;
+}
+
+  @media (max-width: 1280px) {
+    .index-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+
+          }
+  }
+
+
+
+  
