@@ -58,6 +58,7 @@ const Wrapper = styled.div`
     }
 
     .services {
+        background-color: var(--mainGrey);
         margin-top: 50px;
         border: 1px solid var(--primaryColor);
         padding: 2rem;
