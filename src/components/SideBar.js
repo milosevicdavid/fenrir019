@@ -97,6 +97,7 @@ const Wrapper = styled.div`
     border-radius: 10px;
   }
 
+ 
   @media (max-width: 1000px) {
     .yellowbox {
       width: 600px
@@ -105,7 +106,7 @@ const Wrapper = styled.div`
 
 @media (max-width: 641px) {
     .yellowbox {
-      width: 350px
+      width: 350px;
   }
   }
 
