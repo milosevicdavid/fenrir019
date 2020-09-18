@@ -40,10 +40,7 @@ const Wrapper = styled.div`
   }
 
   .children {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem 2rem;
+      margin: 2rem 2rem;
   }
 
   .sidebar {

@@ -1,13 +1,13 @@
 import React from "react"
-
+import img from "../images/catyellow.png"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 
 const NotFoundPage = () => (
   <Layout>
-    <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <div className="404"  >
+      <img src={img} alt="404" width="600" />
+      <h1>404 STRANICA NIJE PRONAĐENA</h1>
+    </div>
   </Layout>
 )
 

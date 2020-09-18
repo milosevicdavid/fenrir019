@@ -21,7 +21,7 @@ const IndexPage = ({ data }) => {
                 </span>
               </p>
 
-              <p>
+              <p className="paragraf1">
                 U našoj ambulanti rade dva licencirana doktora veterinarske
                 medicine, koji će svojom stručnošću postaviti pravu dijagnozu i
                 dati terapiju, po potrebi. Ljubav prema životinjama je glavni
@@ -44,7 +44,7 @@ const IndexPage = ({ data }) => {
                 </span>
               </p>
 
-              <p>
+              <p className="paragraf2">
                 Fenrir019 veterinarska ambulanta je specijalizovana za pružanje
                 preventive i terapije Vašim ljubimcima. Nalazimo se na
                 teritoriji opštine Palilula, u ulici Marijane Gregoran 34a.
@@ -63,7 +63,7 @@ const IndexPage = ({ data }) => {
                 </span>
               </p>
 
-              <p>
+              <p className="paragraf3">
                 Veterinarska ambulanta FENRIR019 pre svega sve svoje drage
                 pacijente tretira jednako s ljubavlju i pažnjom a iznad svega
                 nam je stalo da na najbolji i najadekvatniji način nađemo
@@ -85,13 +85,13 @@ const IndexPage = ({ data }) => {
                 </span>
               </p>
 
-              <p>
+              <p className="paragraf4">
                 Sprovodimo akcije za određene usluge na nedeljnom nivou. Pratite
                 rad naše ambulante na Instagramu: @fenrir019veterinar.
               </p>
             </div>
             <div className="cover">
-              <Img className="cover" fluid={data.first.childImageSharp.fluid} />
+              <Img className="cover" fluid={data.fourth.childImageSharp.fluid} />
             </div>
           </div>
           </div>
@@ -123,6 +123,14 @@ export const query = graphql`
         }
       }
     }
+    fourth: file(relativePath: { eq: "instacat.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+
   }
 `
 
