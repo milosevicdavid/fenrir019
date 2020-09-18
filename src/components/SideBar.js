@@ -73,7 +73,7 @@ const SideBar = () => {
           <span>
             <RiDoorClosedFill />
           </span>
-          &nbsp;&nbsp;&nbsp;Nedelja: &nbsp;Zatvoreno
+          &nbsp;&nbsp;&nbsp;Nedelja: &nbsp;Po pozivu 
         </p>
       </div>
       <Img className="ponuda" fluid={data.ponuda.childImageSharp.fluid} />
