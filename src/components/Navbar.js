@@ -102,7 +102,7 @@ const Navbar = () => {
 
 const Wrapper = styled.div`
 
-  .cover-container {
+   .cover-container {
     display: block;
     padding: auto 50px;
   }

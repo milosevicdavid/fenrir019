@@ -27,6 +27,7 @@ const SideBar = () => {
   return (
     <Wrapper>
 
+      <Img className="ponuda" fluid={data.ponuda.childImageSharp.fluid} />
       <div className=" yellowbox">
         <h2>Kontakt</h2>
         <p>
@@ -76,7 +77,6 @@ const SideBar = () => {
           &nbsp;&nbsp;&nbsp;Nedelja: &nbsp;Po pozivu 
         </p>
       </div>
-      <Img className="ponuda" fluid={data.ponuda.childImageSharp.fluid} />
     </Wrapper>
 
   )
@@ -118,7 +118,7 @@ const Wrapper = styled.div`
 
   .ponuda {
     border-radius: 10px;
-    margin-top: 30px;
+    margin-bottom: 30px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
   }
 
