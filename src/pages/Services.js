@@ -3,10 +3,12 @@ import Layout from "../components/layout"
 import styled from "styled-components"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
+import SEO from "../components/seo"
 
 const Services = ({ data }) => (
     <Wrapper>
         <Layout>
+        <SEO title="Usluge" description="Naše usluge" />
             <p className="headline">FENRIR019 pruža sledeće usluge: </p>
             <div className="services">
                 <ul className="list">

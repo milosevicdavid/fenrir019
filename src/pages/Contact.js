@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import styled from "styled-components"
+import SEO from "../components/seo"
 
 
 
@@ -8,6 +9,7 @@ const Contact = () => {
     return (
   <Wrapper>
     <Layout>
+        <SEO title="Kontakt" description="Mapa, adresa, email, telefoni" />
       <div className="iframe">
         <iframe className="maps" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJrVGu84p6WkcR48DWBhuHxps&key=AIzaSyCRMldkcAR2N9zYckH7LtYZ-d9VbsZZ9MI" allowfullscreen></iframe>
       </div>

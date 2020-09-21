@@ -6,11 +6,13 @@ import Img from "gatsby-image"
 import { FaInstagram } from "react-icons/fa"
 import { GiHouse, GiHealthNormal, GiPawHeart } from "react-icons/gi"
 import "../components/layout.css"
+import SEO from "../components/seo"
 
 const IndexPage = ({ data }) => {
   return (
     <main>
       <Layout>
+        <SEO title="Dobrodošli" description="Dobrodošli na naslovnu stranicu Fenrir019 veterinarske ambulante" />
         <div className="index-container">
           <div className="grid-cell">
             <div className="text">
@@ -91,10 +93,13 @@ const IndexPage = ({ data }) => {
               </p>
             </div>
             <div className="cover">
-              <Img className="cover" fluid={data.fourth.childImageSharp.fluid} />
+              <Img
+                className="cover"
+                fluid={data.fourth.childImageSharp.fluid}
+              />
             </div>
           </div>
-          </div>
+        </div>
       </Layout>
     </main>
   )
@@ -130,7 +135,6 @@ export const query = graphql`
         }
       }
     }
-
   }
 `
 

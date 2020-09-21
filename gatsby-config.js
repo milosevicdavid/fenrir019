@@ -1,8 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Fenrir019`,
+    description: `Fenrir019 veterinarska ambulanta je specijalizovana za pružanje preventive i terapije Vašim ljubimcima. Nalazimo se na teritoriji opštine Palilula, u ulici Marijane Gregoran 34a.`,
+    author: '@milosevicdavid',
+    instagramUsername: '@fenrir019veterinar',
+    image:  'top.jpg',
+    siteUrl: 'https://fenrir019bgd.netlify.app',
+
   },
   plugins: [
     `gatsby-plugin-transition-link`,
@@ -14,16 +18,27 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://fenrir019bgd.netlify.app',
+        sitemap: 'https://fenrir019bgd.netlify.app/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
+
         
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-netlify-headers`,
+    `gatsby-plugin-playground`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
         short_name: `starter`,
-        start_url: `/index`,
+        start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
