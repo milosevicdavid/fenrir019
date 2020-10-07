@@ -36,7 +36,7 @@ const Navbar = () => {
 
   const [isOpen, setNav] = useState(false)
   const toggleNav = () => {
-    setNav(isOpen => !isOpen)
+    setNav( (isOpen) => !isOpen)
   }
 
   return (
@@ -65,10 +65,7 @@ const Navbar = () => {
               <AniLink fade to="/Contact/">
                 KONTAKT
               </AniLink>
-              <AniLink fade to="/404/">
-                USVAJANJE
-              </AniLink>
-            </ul>
+                        </ul>
           </div>
           <div class="nav-links show-nav nav-links-phone">
             <a href="https://www.google.com/maps/place/%D0%9C%D0%B0%D1%80%D0%B8%D1%98%D0%B0%D0%BD%D0%B5+%D0%93%D1%80%D0%B5%D0%B3%D0%BE%D1%80%D0%B0%D0%BD+34,+%D0%91%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D0%B4/@44.8131524,20.5057965,17z/data=!3m1!4b1!4m5!3m4!1s0x475a7a8af3ae51ad:0x9bc6871b06d6c0e3!8m2!3d44.8131486!4d20.5079852">
@@ -107,8 +104,6 @@ const Wrapper = styled.div`
     padding: auto 50px;
   }
 
- 
-
   .logo-image {
     max-width: 200px;
     min-width: 200px;
@@ -144,6 +139,7 @@ const Wrapper = styled.div`
     height: 0;
     overflow: hidden;
     text-align:center;
+    margin-top: 20px;
     
 
     a {

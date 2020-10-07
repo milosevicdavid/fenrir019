@@ -107,14 +107,14 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
   query {
-    first: file(relativePath: { eq: "top.jpg" }) {
+    first: file(relativePath: { eq: "top2.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
-    second: file(relativePath: { eq: "doctors.jpg" }) {
+    second: file(relativePath: { eq: "them.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG
