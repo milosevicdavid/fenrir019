@@ -26,7 +26,6 @@ const SideBar = () => {
 
   return (
     <Wrapper>
-
       <Img className="ponuda" fluid={data.ponuda.childImageSharp.fluid} />
       <div className=" yellowbox">
         <h2>Kontakt</h2>
@@ -40,13 +39,16 @@ const SideBar = () => {
           <span>
             <MdPhoneIphone />
           </span>
-          &nbsp;&nbsp;&nbsp;064 / 270 94 70, 061 / 60 512 71
+          &nbsp;&nbsp;&nbsp;
+          <a href="tel:+381642709470">064 / 270-94-70</a>,
+          &nbsp;&nbsp;&nbsp;
+          <a href="tel:+381616051271">061 / 60-512-71</a>
         </p>
         <p>
           <span>
             <FaPhoneAlt />
           </span>
-          &nbsp;&nbsp;&nbsp;011 / 29-70-419
+          <a href="tel:+381112970419">&nbsp;&nbsp;&nbsp;011 / 29-70-419</a>
         </p>
         <p>
           <span>
@@ -74,11 +76,10 @@ const SideBar = () => {
           <span>
             <RiDoorClosedFill />
           </span>
-          &nbsp;&nbsp;&nbsp;Nedelja: &nbsp;Po pozivu 
+          &nbsp;&nbsp;&nbsp;Nedelja: &nbsp;Po pozivu
         </p>
       </div>
     </Wrapper>
-
   )
 }
 
@@ -95,23 +96,25 @@ const Wrapper = styled.div`
     align-items: end;
     background-color: var(--mainBlack);
     border-radius: 10px;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
   }
 
- 
   @media (max-width: 1000px) {
     .yellowbox {
-      width: 600px
-  }
+      width: 600px;
+    }
   }
 
-@media (max-width: 641px) {
+  @media (max-width: 641px) {
     .yellowbox {
       width: 350px;
-  }
+    }
   }
 
-
- 
   .worktime {
     margin-top: 30px;
   }

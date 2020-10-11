@@ -54,7 +54,7 @@ const Contact = () => {
                 placeholder="Poruka"
               />
               <div>
-                <input type="submit" value="submit here" className="submit" />
+                <input type="submit" value="pošaljite poruku" className="submit" />
               </div>
             </div>
           </form>
