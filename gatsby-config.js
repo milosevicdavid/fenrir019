@@ -5,7 +5,7 @@ module.exports = {
     author: '@milosevicdavid',
     instagramUsername: '@fenrir019veterinar',
     image:  'top.jpg',
-    siteUrl: 'https://fenrir019bgd.netlify.app',
+    siteUrl: 'https://fenrir019.rs',
 
   },
   plugins: [

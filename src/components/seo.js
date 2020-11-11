@@ -16,7 +16,6 @@ const getData = graphql`
     }
   }
 `
-
 const SEO = ({ title, description }) => {
 
   const { site } = useStaticQuery(getData)
@@ -33,6 +32,10 @@ const SEO = ({ title, description }) => {
     <Helmet htmlAttributes={{ lang: "sr-Latn-rs" }} title={`${title} | ${siteTitle}`}>
       <meta name="description" content={description} />
       <meta name="image" content={image} />
+      <meta name="siteTitle" content={siteTitle} />
+      <meta name="instagramUsername" content={instagramUsername} />
+      <meta name="siteUrl" content={siteUrl} />
+      <meta name="siteDesc" content={siteDesc} />
     </Helmet>
   )
 }
