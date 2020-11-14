@@ -19,7 +19,7 @@ const Contact = () => {
 
         <div className="center">
           <form
-            action="https://formspree.io/fenrir019bgd@gmail.com"
+            action="https://formspree.io/f/xknpzboz"
             method="POST"
             className="form"
           >
@@ -57,7 +57,6 @@ const Contact = () => {
                 <input type="submit" value="pošaljite poruku" className="submit" />
               </div>
             </div>
-            <input type="hidden" name="_next" value="https://fenrir.019.rs" />
           </form>
         </div>
       </Layout>
