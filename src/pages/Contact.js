@@ -57,6 +57,7 @@ const Contact = () => {
                 <input type="submit" value="pošaljite poruku" className="submit" />
               </div>
             </div>
+            <input type="hidden" name="_next" value="https://fenrir.019.rs" />
           </form>
         </div>
       </Layout>
