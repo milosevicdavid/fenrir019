@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Fenrir019`,
-    description: `Fenrir019 veterinarska ambulanta je specijalizovana za pružanje preventive i terapije Vašim ljubimcima. Nalazimo se na teritoriji opštine Palilula, u ulici Marijane Gregoran 34a.`,
+    description: `Fenrir019 veterinarska ambulanta je specijalizovana za pružanje preventive i terapije Vašim ljubimcima. Nalazimo se na Karaburmi, u ulici Marijane Gregoran 34a.`,
     author: '@milosevicdavid',
     instagramUsername: '@fenrir019veterinar',
     image:  'top.jpg',
