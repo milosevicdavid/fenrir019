@@ -31,7 +31,6 @@ const Footer = () => {
             <FaPhoneSquareAlt />
           </a>
         </div>
-
     </Wrapper>
   )
 }

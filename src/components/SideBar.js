@@ -26,6 +26,10 @@ const SideBar = () => {
 
     return (
         <Wrapper>
+            <div className="ponuda">
+                <Img fluid={data.ponuda.childImageSharp.fluid} />
+            </div>
+
             <div className=" yellowbox">
                 <h2>Kontakt</h2>
                 <p>
