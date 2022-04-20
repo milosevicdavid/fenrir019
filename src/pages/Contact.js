@@ -12,7 +12,7 @@ const Contact = () => {
           <iframe
             className="maps"
             frameborder="0"
-            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJrVGu84p6WkcR48DWBhuHxps&key=AIzaSyCRMldkcAR2N9zYckH7LtYZ-d9VbsZZ9MI"
+            src="https://maps.google.com/maps?q=Banjickih%20Zrtava%2036&t=&z=13&ie=UTF8&iwloc=&output=embed"
             allowfullscreen
           ></iframe>
         </div>
@@ -54,7 +54,11 @@ const Contact = () => {
                 placeholder="Poruka"
               />
               <div>
-                <input type="submit" value="pošaljite poruku" className="submit" />
+                <input
+                  type="submit"
+                  value="pošaljite poruku"
+                  className="submit"
+                />
               </div>
             </div>
           </form>

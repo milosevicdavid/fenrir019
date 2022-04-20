@@ -12,7 +12,10 @@ const IndexPage = ({ data }) => {
   return (
     <main>
       <Layout>
-        <SEO title="Dobrodošli" description="Dobrodošli na naslovnu stranicu Fenrir019 veterinarske ambulante" />
+        <SEO
+          title="Dobrodošli"
+          description="Dobrodošli na naslovnu stranicu Fenrir019 veterinarske ambulante"
+        />
         <div className="index-container">
           <div className="grid-cell">
             <div className="text">
@@ -49,7 +52,7 @@ const IndexPage = ({ data }) => {
               <p className="paragraf2">
                 Fenrir019 veterinarska ambulanta je specijalizovana za pružanje
                 preventive i terapije Vašim ljubimcima. Nalazimo se na
-                teritoriji opštine Palilula, u ulici Marijane Gregoran 34a.
+                teritoriji opštine Savski Venac, u ulici Banjičkih Žrtava 36.
               </p>
             </div>
             <div className="cover">

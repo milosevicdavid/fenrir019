@@ -5,16 +5,13 @@ import {
   FaPhoneSquareAlt,
   FaFacebook,
   FaInstagram,
-FaPhoneAlt
+  FaPhoneAlt
 } from "react-icons/fa"
 import { FiMail } from "react-icons/fi"
 import { GoLocation } from "react-icons/go"
 import styled from "styled-components"
 import Img from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
-
-
-
 
 const getImages = graphql`
   query {
@@ -28,15 +25,12 @@ const getImages = graphql`
   }
 `
 
-
 const Navbar = () => {
-
   const data = useStaticQuery(getImages)
-
 
   const [isOpen, setNav] = useState(false)
   const toggleNav = () => {
-    setNav( (isOpen) => !isOpen)
+    setNav(isOpen => !isOpen)
   }
 
   return (
@@ -65,14 +59,14 @@ const Navbar = () => {
               <AniLink fade to="/Contact/">
                 KONTAKT
               </AniLink>
-                        </ul>
+            </ul>
           </div>
           <div class="nav-links show-nav nav-links-phone">
-            <a href="https://www.google.com/maps/place/%D0%9C%D0%B0%D1%80%D0%B8%D1%98%D0%B0%D0%BD%D0%B5+%D0%93%D1%80%D0%B5%D0%B3%D0%BE%D1%80%D0%B0%D0%BD+34,+%D0%91%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D0%B4/@44.8131524,20.5057965,17z/data=!3m1!4b1!4m5!3m4!1s0x475a7a8af3ae51ad:0x9bc6871b06d6c0e3!8m2!3d44.8131486!4d20.5079852">
-    <GoLocation /> Marijane Gregoran 34a, Beograd, Karaburma
+            <a href="https://www.google.com/maps/place/Banji%C4%8Dkih+%C5%BErtava+36,+Beograd/@44.7868677,20.4297487,17z/data=!3m1!4b1!4m5!3m4!1s0x475a6fdf3f5f7145:0xf000ef7252f9ffaa!8m2!3d44.7868677!4d20.4319374">
+              <GoLocation /> Banjičkih Žrtava 36, Beograd
             </a>
-    <a href="tel:+381112970419">
-    <FaPhoneAlt/> Telefon: 011/29-70-419
+            <a href="tel:+381117499540">
+              <FaPhoneAlt /> Telefon: 011 / 749-95-40
             </a>
           </div>
         </div>
@@ -87,12 +81,11 @@ const Navbar = () => {
           <AniLink fade to="/Contact/">
             <FiMail />
           </AniLink>
-          <a href="tel:+381112970419">
+          <a href="tel:+381117499540">
             <FaPhoneSquareAlt />
           </a>
         </div>
-    </div>
-    
+      </div>
     </Wrapper>
   )
 }
